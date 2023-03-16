@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatorsApp", "OperatorsAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatorsControlFlowTests", "OperatorsControlFlowTests\OperatorsControlFlowTests.csproj", "{88B9D39E-FF80-4252-920A-1E237DC6FA56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlowApp", "ControlFlowApp\ControlFlowApp.csproj", "{D2B5D01C-4385-45A5-BB61-8C2575A78FAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlFlowApp", "ControlFlowApp\ControlFlowApp.csproj", "{D2B5D01C-4385-45A5-BB61-8C2575A78FAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlowAppTest", "ControlFlowAppTest\ControlFlowAppTest.csproj", "{90306728-7024-4F68-8DB7-348D6104B74D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlFlowAppTest", "ControlFlowAppTest\ControlFlowAppTest.csproj", "{90306728-7024-4F68-8DB7-348D6104B74D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionApp", "..\ExceptionApp\ExceptionApp.csproj", "{FC77EAE7-50CD-4563-BE82-4B672708DA33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionDataTypesTests", "ExceptionDataTypesTests\ExceptionDataTypesTests.csproj", "{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{90306728-7024-4F68-8DB7-348D6104B74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90306728-7024-4F68-8DB7-348D6104B74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90306728-7024-4F68-8DB7-348D6104B74D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC77EAE7-50CD-4563-BE82-4B672708DA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC77EAE7-50CD-4563-BE82-4B672708DA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC77EAE7-50CD-4563-BE82-4B672708DA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC77EAE7-50CD-4563-BE82-4B672708DA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

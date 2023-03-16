@@ -44,6 +44,7 @@ namespace Op_CtrlFlow
                 else return "Invalid Mark";
             }
             else return "Invalid Mark";
+
             /* // without nested, didn't use my eyes to read properly
             if (mark <= 39 && mark >= 0) return "Fail";
             else if (mark <= 59 && mark >= 40) return "Pass";
@@ -67,6 +68,8 @@ namespace Op_CtrlFlow
                     break;
                 case 4: maxAttendees = 20;
                     break;
+             //    default: //can't think of any default values
+             //        break; 
             }
             return maxAttendees;
         }

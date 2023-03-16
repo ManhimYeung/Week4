@@ -7,10 +7,10 @@ namespace Op_CtrlFlow_Tests
 {
     public class Exercises_Tests
     {
-        // write unit test(s) for MyMethod here
+        // write unit test(s) for Compare here
+        [TestCase(12, 6, true)]
+        [TestCase(14, 2, true)]
         [TestCase(1, 1, false)]
-        [TestCase(2, 1, true)]
-        [TestCase(3, 1, true)]
         public void GivenNum1AndNum2_Compare_ReturnBoolOrModulus(int num1, int num2, bool expectedResult)
         {
             Assert.That(Exercises.Compare(num1, num2), Is.EqualTo(expectedResult));

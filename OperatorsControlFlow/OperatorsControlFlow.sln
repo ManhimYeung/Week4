@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlFlowApp", "ControlFl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlFlowAppTest", "ControlFlowAppTest\ControlFlowAppTest.csproj", "{90306728-7024-4F68-8DB7-348D6104B74D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionApp", "..\ExceptionApp\ExceptionApp.csproj", "{FC77EAE7-50CD-4563-BE82-4B672708DA33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionApp", "..\ExceptionApp\ExceptionApp.csproj", "{FC77EAE7-50CD-4563-BE82-4B672708DA33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionDataTypesTests", "ExceptionDataTypesTests\ExceptionDataTypesTests.csproj", "{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionDataTypesTests", "ExceptionDataTypesTests\ExceptionDataTypesTests.csproj", "{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericalDataTypesApp", "..\NumericalDataTypes\NumericalDataTypesApp.csproj", "{66D46DFA-FCDF-4623-B5BD-9F83B8C86C6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2A03B8B-C53E-41D2-AA7E-26517A000B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D46DFA-FCDF-4623-B5BD-9F83B8C86C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D46DFA-FCDF-4623-B5BD-9F83B8C86C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D46DFA-FCDF-4623-B5BD-9F83B8C86C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D46DFA-FCDF-4623-B5BD-9F83B8C86C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

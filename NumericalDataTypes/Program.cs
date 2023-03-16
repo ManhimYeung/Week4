@@ -5,6 +5,7 @@ public class Program
 {
     static void Main(string[] args)
     {
+        
         int anInt = 3;
         var vInt = 4;
         var v2Int = vInt;
@@ -50,6 +51,36 @@ public class Program
         int myInt = 21;
 
         int charInt = myChar;
-        //byte myByte = 1000;
+        byte myByte = byte.MaxValue;
+        Console.WriteLine("Byte max: " + myByte);
+        //myByte += 1;
+        //Console.WriteLine("Byte max: " + myByte);
+
+        sbyte mySByte = sbyte.MaxValue;
+        
+        checked
+        {
+            Console.WriteLine("SByte max: " + mySByte);
+            //mySByte += 1;
+            Console.WriteLine("SByte max: " + mySByte);
+        }
+
+        mySByte = sbyte.MinValue;
+        Console.WriteLine("SByte min: " + mySByte);
+        //mySByte += 1;
+        Console.WriteLine("SByte min - 1: " + mySByte);
+
+        double x = 3.14159263159;
+        float y = (float)x;
+
+       // int numCows = 260;
+       // uint countCows = (uint)numCows;
+       // byte byteCows = (byte)numCows;
+       //
+       // int bankBalance = -2;
+       // uint posBalance = (uint)bankBalance;
+
+        //string stringCows = Convert.ToString(numCows, 2);
+        
     }
 }

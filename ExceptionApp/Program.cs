@@ -20,7 +20,6 @@ internal class Program
             Console.WriteLine("You gave me an empty file name");
         }
         finally { // running any code that must execute even if there is an exception
-
             Console.WriteLine("Finished!");
         }
 

@@ -25,8 +25,18 @@ namespace OperatorsControlFlowTests
         [TestCase(-3)]
         public void GivenPoundsIsNegative_GetStones_ThrowsAnArgumentOutOfRangeException(int totalPounds)
         {
+            Assert.That(() => Method.GetStones(totalPounds), Throws.TypeOf<ArgumentOutOfRangeException>().
+                With.Message.Contain(" is negative, please enter a positive integer."));
+        }
+
+        [TestCase(-1)]
+        [TestCase(-2)]
+        [TestCase(-3)]
+        public void GivenPoundsIsNegative_GetPounds_ThrowsAnArgumentOutOfRangeException(int totalPounds)
+        {
             Assert.That(() => Method.GetPounds(totalPounds), Throws.TypeOf<ArgumentOutOfRangeException>().
                 With.Message.Contain(" is negative, please enter a positive integer."));
         }
+
     }
 }

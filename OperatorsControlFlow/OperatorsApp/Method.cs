@@ -11,16 +11,14 @@ public class Method
     
     public static int GetStones(int totalPounds)
     {
+        if (totalPounds < 0) throw new ArgumentOutOfRangeException(totalPounds + " is negative, please enter a positive integer.");
         return totalPounds / 14;
     }
 
     public static int GetPounds(int totalPounds)
     {
+        if (totalPounds < 0) throw new ArgumentOutOfRangeException(totalPounds + " is negative, please enter a positive integer.");
         return totalPounds % 14;
     }
 
-    #region ignore me
-    // int j = 5, k = 3, m = 4;
-    // m += +j++ + ++k;
-    #endregion
 }

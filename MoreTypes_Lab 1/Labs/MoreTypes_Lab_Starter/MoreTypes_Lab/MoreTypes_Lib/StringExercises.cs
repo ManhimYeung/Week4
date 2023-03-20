@@ -10,19 +10,19 @@ namespace MoreTypes_Lib
         {
             input = input.Trim().ToUpper();
             for (int i = 0; i < num; i++)
-                input += i.ToString();
+                input += i; // 'i' doesn't need tostring()
             return input;
         }
 
         // returns a formatted address string given its components
         public static string Address(int number, string street, string city, string postcode)
         {
-            return $"{number.ToString()} {street}, {city} {postcode}.";
+            return $"{number} {street}, {city} {postcode}.";
         }
         // returns a string representing a test score, written as percentage to 1 decimal place
-        public static string Scorer(float score, float outOf)
+        public static string Scorer(int score, int outOf) //remain as int
         {
-            string percentage = Math.Round((score/ outOf) * 100, 1).ToString();
+            double percentage = Math.Round(((double)score/ outOf) * 100, 1);
             return $"You got {score} out of {outOf}: {percentage}%";
         }
 
@@ -38,6 +38,7 @@ namespace MoreTypes_Lib
         public static string CountLetters(string input)
         {
             input = input.ToUpper();
+
             int aCount = input.ToCharArray().Count(c => c == 'A');
             int bCount = input.ToCharArray().Count(c => c == 'B');
             int cCount = input.ToCharArray().Count(c => c == 'C');
@@ -45,5 +46,6 @@ namespace MoreTypes_Lib
 
             return $"A:{aCount} B:{bCount} C:{cCount} D:{dCount}";
         }
+            
     }
 }

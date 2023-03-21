@@ -9,6 +9,7 @@ namespace MoreTypes_Lib
         public static string ManipulateString(string input, int num)
         {
             input = input.Trim().ToUpper();
+
             for (int i = 0; i < num; i++)
                 input += i; // 'i' doesn't need tostring()
             return input;

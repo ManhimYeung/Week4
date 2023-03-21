@@ -60,4 +60,29 @@ public class test
         Assert.That(() => Methods.Mult(num, numList), Throws.TypeOf<ArgumentOutOfRangeException>().
             With.Message.Contain("Out of range"));
     }
+
+    // ----------------------------------------------------------------------------------------------------------
+    [TestCase("awfeoijiewdk", "wfjwdk")]
+    public void GivenAStringWithVowels_RemoveVowels_ReturnNewString(string input, string expectedOutput)
+    {
+        Assert.That(Methods.removeVowels(input), Is.EqualTo(expectedOutput));
+    }
+
+    [TestCase("nish", "hsin")]
+    public void GivenString_ReverseString_ReturnNewString(string input, string expectedOutput)
+    {
+        Assert.That(Methods.Reverse(input), Is.EqualTo(expectedOutput));
+    }
+
+    [Test]
+    public void GivenIntArray_IntToChar_ReturnsASCIIStrings()
+    {
+        Assert.That(Methods.IntToChar(new int[] { 78, 105, 115, 104 }), Is.EqualTo("Nish"));
+    }
+
+    [Test]
+    public void GivenIntArray_SecondHighest_ReturnsSecondHighest()
+    {
+        Assert.That(Methods.SecondHighest(new int[] { 1, 2, 3, 4 }), Is.EqualTo(3));
+    }
 }

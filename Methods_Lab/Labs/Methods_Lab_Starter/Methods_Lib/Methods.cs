@@ -19,7 +19,7 @@ namespace Methods_Lib
             return (weeks, days);
         }
 
-        public static (int numSqr, int cube, double numSqrt) PowersRoot (int num)
+        public static (int numSqr, int cube, double numSqrt) PowersRoot(int num)
         {
             if (num <= 0) throw new ArgumentException("Number must be greater than 0");
 
@@ -60,7 +60,7 @@ namespace Methods_Lib
                 speed < 50 && speed >= 30 ? "Just right" :
                 speed < 70 && speed >= 50 ? "Too quick" :
                 "Too fast";
-            
+
             /*
             if (speed < 0) throw new ArgumentOutOfRangeException("Speed invalid");
             
@@ -80,7 +80,7 @@ namespace Methods_Lib
         // list = 1, 4, 5, 6
         // number = 3
         // the method should return 20
-        public static int Mult(int num, List <int> numList)
+        public static int Mult(int num, List<int> numList)
         {
             int product = 1;
 
@@ -93,5 +93,59 @@ namespace Methods_Lib
             }
             return product;
         }
+
+        // ---------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------
+
+        // Write a method which takes a string as an argument and remove the vowels
+        public static string removeVowels(string input)
+        {
+            string newInput = input.ToLower().
+                Replace("a", string.Empty).
+                Replace("e", string.Empty).
+                Replace("i", string.Empty).
+                Replace("o", string.Empty).
+                Replace("u", string.Empty);
+
+            return newInput;
+        }
+
+        // Write a method which takes a string as an argument and reverses it
+        // e.g. nish -> hsin. Include unit tests.
+        public static string Reverse(string input)
+        {
+            return new string(input.Reverse().ToArray());
+        }
+
+        // Write a method which takes an array if the elements are integers and returns the character
+        // representation of that integers as a string eg. int[] arr = {78, 105, 115, 104}
+        public static string IntToChar(int[] array)
+        {
+            string result = string.Empty;
+            foreach (int i in array)
+                result += (char)i;
+
+            return result;
+        }
+
+        // Second highest number in array
+        public static int SecondHighest(int[] array)
+        {
+            int highest = int.MinValue;
+            for (int i = 0; i < array.Length; i++)
+                if (highest < i) highest = i;
+
+            int[] newArray = array.Where(i => i != highest).ToArray();
+
+            for (int i = 0; i < newArray.Length; i++)
+                if (highest < i) highest = i;
+
+            return highest;
+        }
+
     }
 }
+

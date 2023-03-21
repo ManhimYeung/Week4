@@ -39,10 +39,10 @@ namespace MoreTypes_Lib
         {
             input = input.ToUpper();
 
-            int aCount = input.ToCharArray().Count(c => c == 'A');
-            int bCount = input.ToCharArray().Count(c => c == 'B');
-            int cCount = input.ToCharArray().Count(c => c == 'C');
-            int dCount = input.ToCharArray().Count(c => c == 'D');
+            int aCount = input.Count(c => c == 'A');
+            int bCount = input.Count(c => c == 'B');
+            int cCount = input.Count(c => c == 'C');
+            int dCount = input.Count(c => c == 'D');
 
             return $"A:{aCount} B:{bCount} C:{cCount} D:{dCount}";
         }

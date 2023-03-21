@@ -31,6 +31,12 @@ namespace ControlFlowApp
             return highest;
         }
 
+        public static int test(List<int> nums)
+        {
+            if (nums.Count== 0) return int.MaxValue;
+            return nums.Min();        
+        }
+
         internal static int HighestForLoop(List<int> nums)
         {
             int highest = Int32.MinValue;

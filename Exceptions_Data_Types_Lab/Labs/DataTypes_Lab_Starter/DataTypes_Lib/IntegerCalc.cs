@@ -10,10 +10,10 @@ namespace DataTypes_Lib
             {
                 return checked(num1 + num2);
             }
-            catch (OverflowException) // give it a name
+            catch (OverflowException e) // give it a name
             {
                 // print message instead of exception
-                throw new OverflowException();
+                throw new OverflowException("error");
             }
         }
 

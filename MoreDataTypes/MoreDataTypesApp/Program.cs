@@ -96,7 +96,8 @@ internal class Program
         var rng = new Random();
         var rngSeeded = new Random(42);
         //Console.WriteLine(rng.Next(1, 11));
-        Console.WriteLine(rngSeeded.Next(1, 11));
+        for (int i = 0; i < 50; i++)
+            Console.WriteLine(rngSeeded.Next(1, 7));
     }
 
     public static void Enums()
